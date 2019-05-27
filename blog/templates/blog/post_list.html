@@ -11,33 +11,12 @@
     <div>
         <h1><a href="">Marvel's Mini Blog</a></h1>
     </div>
-    
+{% for post in posts %}
     <div>
-        <p>published: 24.05.2019, 19:19</p>
-        <h1><a href="">My First Post</a></h1>
-        <p>Hi Nerd,
-            Ever heard about the saying: OLTRTA?
-            Sure, that sounds pretty weird, I guess. Let me save 
-            you:
-            OLTRTA is just a techie fancy term for "One Language 
-            To Rule Them All"! Incredible! right? And believe me, 
-            every P.L today, is on their marks to make this mark! 
-            What a sprint! Usein Bolt, must be invited!
-        </p>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
-    
-    <div>
-        <p>published: 24.05.2019, 19:44</p>
-        <h1><a href="">My Second Post</a></h1>
-        <p>
-            Well, I can clarify. It simply means, you only spend 
-            your lazy bone energy and unfortunately limited time 
-            on just one Programming Language then, after that, 
-            you go to sleep. Let same language, do the rest of 
-            the heavy lifting sacrifice for you! Just like the 
-            redemptive sacrifice of Jesus for Humanity! WoW!
-        </p>
-    </div>
-
+{% endfor %}
 </body>
 </html>
