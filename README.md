@@ -1,6 +1,6 @@
 # mini-blog
 
-This is a micro blog built in Python famed framework, 
+This is a micro blog built on Python's famed framework, 
 Django to demonstrate the practical application of 
 CRUD practice through it, with the support of Object 
 Relational Mapping and SQLite DB.
